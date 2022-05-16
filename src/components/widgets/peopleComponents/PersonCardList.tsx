@@ -1,6 +1,6 @@
 import React from 'react'
 import PersonCard from './PersonCard'
-import './../../App.css';
+import './../../../App.css';
 
 export type People = {
     people: [],

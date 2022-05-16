@@ -1,7 +1,7 @@
 import { Box, Button, IconButton, Modal, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import React, { useState } from 'react'
-import DataInfoField from './DataInfoField';
+import DataInfoField from '../DataInfoField';
 
 export type Person = {
     person: string,

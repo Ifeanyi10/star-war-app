@@ -73,31 +73,3 @@ const MenuListItems: React.FC<Props> = ({open}) => {
 export default MenuListItems
 
 
-export const mainListItems = (
-  <React.Fragment>
-    <ListItemButton>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Dashboard" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-       <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="People" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <MovieIcon />
-      </ListItemIcon>
-      <ListItemText primary="Movies" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <LocationIcon />
-      </ListItemIcon>
-      <ListItemText primary="Planets" />
-    </ListItemButton>
-  </React.Fragment>
-);

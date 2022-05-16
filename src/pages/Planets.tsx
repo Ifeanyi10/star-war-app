@@ -4,18 +4,16 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import FooterBox from '../components/widgets/FooterBox';
-import ButtonList from '../components/widgets/ButtonList';
-import AppBar from '../components/layouts/AppBar';
-import WelcomeText from '../components/widgets/WelcomeText';
-import DrawerLayout from '../components/layouts/DrawerLayout';
-import Spinner from '../components/widgets/Spinner';
+
 import { Grid, Paper, Toolbar } from '@mui/material';
-import PlanetCardList from '../components/widgets/planet/PlanetCardList';
-import PeopleCarousal from '../components/widgets/PeopleCarousel';
+import DrawerLayout from '../components/layouts/DrawerLayout';
+import theme from '../components/models/Theme';
+import FooterBox from '../components/widgets/FooterBox';
+import PlanetCardList from '../components/widgets/planetComponets/PlanetCardList';
+import PlanetCarousal from '../components/widgets/planetComponets/PlanetCarousal';
+import Spinner from '../components/widgets/Spinner';
 
 
-const theme = createTheme();
 const API_URL = 'https://swapi.dev/api/planets';
 const drawerWidth: number = 240;
 const drawerHeight: number = 600;
@@ -60,10 +58,6 @@ const PlanetsPage: React.FC = () =>{
             sx={{
               flexGrow: 1,
               p: 1,
-
-              // minWidth: {outerHeight},
-              // width: { sm: outerHeight },
-              // maxHeight: { sm: outerHeight },
               width: { sm: `calc(100% - ${drawerWidth}px)` },
               maxHeight: { sm: `calc(100% - ${drawerHeight}px)` },
             }}
@@ -99,7 +93,7 @@ const PlanetsPage: React.FC = () =>{
                       height: drawerHeight,
                     }}
                   >
-                    <PeopleCarousal />
+                    <PlanetCarousal />
                   </Paper>
                 </Grid>
               </Grid>

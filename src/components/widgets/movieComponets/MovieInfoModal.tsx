@@ -1,7 +1,7 @@
 import { Box, IconButton, Modal, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import DataInfoField from './DataInfoField';
+import DataInfoField from '../DataInfoField';
 
 export type Movie = {
     movie: string,

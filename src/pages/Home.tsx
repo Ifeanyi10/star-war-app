@@ -1,15 +1,15 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import { Container, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-
+import { Container, CssBaseline, ThemeProvider } from '@mui/material';
 import DrawerLayout from '../components/layouts/DrawerLayout';
+import theme from '../components/models/Theme';
 import ButtonList from '../components/widgets/ButtonList';
 import FooterBox from '../components/widgets/FooterBox';
 import WelcomeText from '../components/widgets/WelcomeText';
 
 
+
 const drawerWidth: number = 240;
-const theme = createTheme();
 
 const HomePage: React.FC = () => {
 
@@ -25,6 +25,7 @@ const HomePage: React.FC = () => {
         sx={{
           flexGrow: 1,
           p: 15,
+          mt: 20,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >

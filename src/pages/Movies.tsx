@@ -4,19 +4,15 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import FooterBox from '../components/widgets/FooterBox';
-import ButtonList from '../components/widgets/ButtonList';
-import AppBar from '../components/layouts/AppBar';
-import WelcomeText from '../components/widgets/WelcomeText';
 import { Toolbar, Grid, Paper } from '@mui/material';
 import DrawerLayout from '../components/layouts/DrawerLayout';
-import PeopleCarousal from '../components/widgets/PeopleCarousel';
-import PersonList from '../components/widgets/PersonCardList';
+import theme from '../components/models/Theme';
+import FooterBox from '../components/widgets/FooterBox';
+import MovieCardList from '../components/widgets/movieComponets/MovieCardList';
+import MovieCarousal from '../components/widgets/movieComponets/MovieCarousel';
 import Spinner from '../components/widgets/Spinner';
-import MovieCardList from '../components/widgets/MovieCardList';
 
 
-const theme = createTheme();
 const API_URL = 'https://swapi.dev/api/films';
 const drawerWidth: number = 240;
 const drawerHeight: number = 600;
@@ -59,10 +55,6 @@ const MoviesPage: React.FC = () =>{
             sx={{
               flexGrow: 1,
               p: 1,
-
-              // minWidth: {outerHeight},
-              // width: { sm: outerHeight },
-              // maxHeight: { sm: outerHeight },
               width: { sm: `calc(100% - ${drawerWidth}px)` },
               maxHeight: { sm: `calc(100% - ${drawerHeight}px)` },
             }}
@@ -98,7 +90,7 @@ const MoviesPage: React.FC = () =>{
                       height: drawerHeight,
                     }}
                   >
-                    <PeopleCarousal />
+                    <MovieCarousal />
                   </Paper>
                 </Grid>
               </Grid>

@@ -6,18 +6,20 @@ import DrawerLayout from '../components/layouts/DrawerLayout';
 import ButtonList from '../components/widgets/ButtonList';
 import FooterBox from '../components/widgets/FooterBox';
 import WelcomeText from '../components/widgets/WelcomeText';
-import PersonCard from '../components/widgets/PersonCard';
+
 import DataInfoField from '../components/widgets/DataInfoField';
-import PersonList from '../components/widgets/PersonCardList';
-import PeopleCarousal from '../components/widgets/PeopleCarousel';
+
+
 import Spinner from '../components/widgets/Spinner';
+import theme from '../components/models/Theme';
+import PeopleCarousal from '../components/widgets/peopleComponents/PeopleCarousel';
+import PersonList from '../components/widgets/peopleComponents/PersonCardList';
 
 
 const drawerWidth: number = 240;
 const drawerHeight: number = 600;
 const outerHeight: string = '80%';
 const componentHeight: string = '80%';
-const theme = createTheme();
 
 const PeoplePage: React.FC = () => {
 
