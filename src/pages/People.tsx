@@ -8,7 +8,7 @@ import FooterBox from '../components/widgets/FooterBox';
 import WelcomeText from '../components/widgets/WelcomeText';
 import PersonCard from '../components/widgets/PersonCard';
 import DataInfoField from '../components/widgets/DataInfoField';
-import PersonList from '../components/widgets/PersonList';
+import PersonList from '../components/widgets/PersonCardList';
 import PeopleCarousal from '../components/widgets/PeopleCarousel';
 import Spinner from '../components/widgets/Spinner';
 
@@ -46,11 +46,7 @@ const PeoplePage: React.FC = () => {
 
     (async () => await fetchPeople())();
 
-  }, [])
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -85,6 +81,7 @@ const PeoplePage: React.FC = () => {
                       display: "flex",
                       flexDirection: "column",
                       maxHeight: drawerHeight,
+                      minHeight: drawerHeight,
                       scrollBehavior: "smooth",
                       scrollbarWidth: "thin",
                       overflow: "auto",

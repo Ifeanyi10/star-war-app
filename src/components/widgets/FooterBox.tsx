@@ -5,7 +5,7 @@ import Copyright from './Copyright';
 
 const FooterBox: React.FC = () => {
   return (
-    <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+    <Box sx={{ p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
           REDspace
         </Typography>

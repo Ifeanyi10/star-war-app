@@ -9,14 +9,14 @@ import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import { blue } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/OpenInNew';
+import OpenIcon from '@mui/icons-material/OpenInNew';
 import PersonInfoModal from './PersonInfoModal';
 
 // interface ExpandMoreProps extends IconButtonProps {
 //   expand: boolean;
 // }
 
-type personInfo = {
+type PersonInfo = {
   id: number;
   name: string,
   height: string,
@@ -24,7 +24,7 @@ type personInfo = {
 }; 
 
 
-const PersonCard: React.FC <personInfo> = (personInfo) => {
+const PersonCard: React.FC <PersonInfo> = (personInfo) => {
   // const [expanded, setExpanded] = React.useState(false);
 
   // const handleExpandClick = () => {
@@ -86,7 +86,7 @@ const PersonCard: React.FC <personInfo> = (personInfo) => {
               }
               action={
                 <IconButton sx={{color: '#eb161e'}} aria-label="open-modal" onClick={() => buttonHandler(personInfo.id, personInfo.personData) }>
-                  <FavoriteIcon />
+                  <OpenIcon />
                 </IconButton>
               }
               title={personInfo.name}

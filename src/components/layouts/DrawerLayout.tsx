@@ -77,7 +77,7 @@ const DrawerLayout: React.FC <Props> = ({title}) => {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex"}}>
       <AppBar position="absolute" open={open}>
         <Toolbar
           sx={{

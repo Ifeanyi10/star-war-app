@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
         <CssBaseline />
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex"}}>
       
       <DrawerLayout title='Star Wars Explorer'/>
 
