@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .slide .legend{
+  background: #eb161e!important;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +47,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* img .carousalHero{
+  object-fit: cover !important;
+  object-position: center !important;
+  overflow: hidden !important;
+  height: 100vh !important;
+  width: 20px !important;
+}
+
+.carousalHero .carousal-item::before{
+  content: '';
+  background-image: 
+  linear-gradient(
+    to bottom,
+    transparent, rgba(0,0,0,0.5)
+  );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+} */
+
+/* "bootstrap": "^5.1.3",
+"react-bootstrap": "^2.4.0", */
