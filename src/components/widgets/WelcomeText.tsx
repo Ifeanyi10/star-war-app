@@ -1,5 +1,8 @@
-import React from 'react'
+import React from 'react';
+
 import Typography from '@mui/material/Typography';
+
+import theme from '../models/Theme';
 
 const WelcomeText: React.FC = () => {
   return (
@@ -13,7 +16,7 @@ const WelcomeText: React.FC = () => {
         >
             Welcome To Star Wars Explorer 
         </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" paragraph>
+        <Typography variant="h5" align="center" paragraph sx={{color: theme.palette.text.secondary}}>
             Explore collections about Star Wars films. Select any of the buttons
             below to start your exploration. Have Fun!
         </Typography>

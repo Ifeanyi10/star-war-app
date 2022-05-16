@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import { blue } from '@mui/material/colors';
 import OpenIcon from '@mui/icons-material/OpenInNew';
 import PersonInfoModal from './PersonInfoModal';
+import theme from '../../models/Theme';
 
 // interface ExpandMoreProps extends IconButtonProps {
 //   expand: boolean;
@@ -80,12 +81,12 @@ const PersonCard: React.FC <PersonInfo> = (personInfo) => {
       <Card sx={{m: 1, minHeight: 80,}}>
             <CardHeader
               avatar={
-                <Avatar sx={{ bgcolor: '#eb161e' }} aria-label="recipe">
+                <Avatar sx={{ bgcolor: theme.palette.text.primary }} aria-label="recipe">
                   {personInfo.name.charAt(0).toLocaleUpperCase()}
                 </Avatar>
               }
               action={
-                <IconButton sx={{color: '#eb161e'}} aria-label="open-modal" onClick={() => buttonHandler(personInfo.id, personInfo.personData) }>
+                <IconButton sx={{color: theme.palette.text.primary}} aria-label="open-modal" onClick={() => buttonHandler(personInfo.id, personInfo.personData) }>
                   <OpenIcon />
                 </IconButton>
               }

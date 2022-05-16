@@ -2,6 +2,7 @@ import { Box, IconButton, Modal, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import DataInfoField from '../DataInfoField';
+import theme from '../../models/Theme';
 
 export type Movie = {
     movie: string,
@@ -39,11 +40,11 @@ const MovieInfoModal: React.FC<Movie> = ({movie}) => {
       >
         <Box sx={style}>
           
-        <IconButton sx={{float: 'right', color: '#eb161e'}}  aria-label="close" onClick={handleClose}>
+        <IconButton sx={{float: 'right', color: theme.palette.text.primary}}  aria-label="close" onClick={handleClose}>
          <CloseIcon />
       </IconButton>
 
-          <Typography id="server-modal-title" variant="h4" component="h4">
+          <Typography id="server-modal-title" variant="h4" component="h4" sx={{color: theme.palette.text.secondary}}>
             {myMovieData["title"]}
           </Typography>
           <Box id="server-modal-description" sx={{ pt: 2 }}>

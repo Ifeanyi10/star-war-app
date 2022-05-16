@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { Box, TextField, Typography} from '@mui/material';
+
+import { Box, Typography} from '@mui/material';
+
+import theme from '../models/Theme';
 
 interface Props{
   label: string;
@@ -7,6 +10,7 @@ interface Props{
 };
 
 const DataInfoField: React.FC <Props> = (dataInfo) => {
+  
 
   return (
     <Box
@@ -21,18 +25,9 @@ const DataInfoField: React.FC <Props> = (dataInfo) => {
       <Typography id="transition-modal-title"variant="h6" component="h6" sx={{ mt: 1 , mb:-1}}>
       {dataInfo.label}:
         </Typography>
-        <Typography id="transition-modal-description" variant="h4" component="h6" sx={{ mb: 1 }}>
-        {dataInfo.value}
+        <Typography id="transition-modal-description" variant="h5" component="h5" sx={{ mb: 1, color: theme.palette.text.secondary}}>
+        {dataInfo.value === 'n/a' ? 'Not Provided': dataInfo.value}
         </Typography>
-
-        {/* <TextField
-          id="outlined-read-only-input"
-          label={dataInfo.label}
-          defaultValue= {dataInfo.value}
-          InputProps={{
-            readOnly: true,
-          }}
-        /> */}
 
       </div>
     </Box>

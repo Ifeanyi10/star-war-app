@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { useSelector } from 'react-redux';
+
 
 import './App.css';
 import HomePage from './pages/Home';
@@ -13,7 +13,7 @@ import PeoplePage from './pages/People';
 import PlanetsPage from './pages/Planets';
 
 class App extends Component {
-  // const counter = useSelector((state: number) => state.counter);
+
   render(): JSX.Element{
     return (
       <BrowserRouter>

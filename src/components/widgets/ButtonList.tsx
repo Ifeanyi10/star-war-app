@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import Stack from '@mui/material/Stack';
 import PeopleIcon from '@mui/icons-material/People';
 import MovieIcon from '@mui/icons-material/Movie';

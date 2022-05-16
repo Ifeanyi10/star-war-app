@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+
 import Box from '@mui/material/Box';
 import { Container, CssBaseline, ThemeProvider } from '@mui/material';
+
 import DrawerLayout from '../components/layouts/DrawerLayout';
 import theme from '../components/models/Theme';
 import ButtonList from '../components/widgets/ButtonList';

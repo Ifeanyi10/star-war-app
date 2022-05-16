@@ -1,8 +1,10 @@
 import React from 'react'
+
 import Button from '@mui/material/Button';
 
 import {useNavigate} from 'react-router-dom';
-import { ListItemIconProps } from '@mui/material/ListItemIcon';
+
+import theme from '../models/Theme';
 
 type Props = {
     buttonName: string;
@@ -17,8 +19,8 @@ const ButtonItem: React.FC<Props> = ({buttonName, startIcon, navigateRoute}) => 
     navigate(navigateRoute);
   };
   return (
-    <Button sx={{color: '#eb161e', borderBlockColor: '#eb161e', border: '1px #eb161e solid', '&:hover': {
-      backgroundColor: '#eb161e',
+    <Button sx={{color: theme.palette.text.primary, borderBlockColor: theme.palette.text.primary, border: '1px #eb161e solid', '&:hover': {
+      backgroundColor: theme.palette.text.primary,
       color: '#fff',
       border: '1px #eb161e solid',
   },}} variant="outlined" startIcon={startIcon} onClick={navigateHandler}>{buttonName}</Button>

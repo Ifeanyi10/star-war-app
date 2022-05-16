@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+
 import Box from '@mui/material/Box';
-import { Backdrop, CircularProgress, Container, createTheme, CssBaseline, Grid, Paper, Tabs, ThemeProvider, Toolbar } from '@mui/material';
+import {Container, CssBaseline, Grid, Paper, Tabs, ThemeProvider, Toolbar } from '@mui/material';
 
 import DrawerLayout from '../components/layouts/DrawerLayout';
-import ButtonList from '../components/widgets/ButtonList';
-import FooterBox from '../components/widgets/FooterBox';
-import WelcomeText from '../components/widgets/WelcomeText';
-
-import DataInfoField from '../components/widgets/DataInfoField';
-
-
-import Spinner from '../components/widgets/Spinner';
 import theme from '../components/models/Theme';
+import FooterBox from '../components/widgets/FooterBox';
 import PeopleCarousal from '../components/widgets/peopleComponents/PeopleCarousel';
 import PersonList from '../components/widgets/peopleComponents/PersonCardList';
+import Spinner from '../components/widgets/Spinner';
+
+
 
 
 const drawerWidth: number = 240;
@@ -64,10 +61,6 @@ const PeoplePage: React.FC = () => {
             sx={{
               flexGrow: 1,
               p: 1,
-
-              // minWidth: {outerHeight},
-              // width: { sm: outerHeight },
-              // maxHeight: { sm: outerHeight },
               width: { sm: `calc(100% - ${drawerWidth}px)` },
               maxHeight: { sm: `calc(100% - ${drawerHeight}px)` },
             }}
@@ -75,7 +68,7 @@ const PeoplePage: React.FC = () => {
             <Toolbar />
             <Container maxWidth="lg" sx={{ mt: 2, mb: 4 }}>
               <Grid container spacing={10}>
-                {/* Chart */}
+                
                 <Grid item xs={12} md={6} lg={6}>
                   <Paper
                     sx={{
@@ -93,7 +86,7 @@ const PeoplePage: React.FC = () => {
                     <PersonList people={people} />
                   </Paper>
                 </Grid>
-                {/* Recent Deposits */}
+                
                 <Grid item xs={12} md={6} lg={6}>
                   <Paper
                     sx={{

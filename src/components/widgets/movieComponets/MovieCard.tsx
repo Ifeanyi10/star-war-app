@@ -2,6 +2,7 @@ import { Avatar, Card, CardHeader, IconButton } from '@mui/material';
 import React, { useState } from 'react'
 import OpenIcon from '@mui/icons-material/OpenInNew';
 import MovieInfoModal from './MovieInfoModal';
+import theme from '../../models/Theme';
 
 type MovieInfo = {
     id: number;
@@ -26,12 +27,12 @@ const MovieCard: React.FC <MovieInfo> = (movieInfo) => {
         <Card sx={{m: 1, minHeight: 80,}}>
             <CardHeader
               avatar={
-                <Avatar sx={{ bgcolor: '#eb161e' }} aria-label="recipe">
+                <Avatar sx={{ bgcolor: theme.palette.text.primary }} aria-label="recipe">
                   {movieInfo.title.charAt(0).toLocaleUpperCase()}
                 </Avatar>
               }
               action={
-                <IconButton sx={{color: '#eb161e'}} aria-label="open-modal" onClick={() => buttonHandler(movieInfo.id, movieInfo.movieData) }>
+                <IconButton sx={{color: theme.palette.text.primary}} aria-label="open-modal" onClick={() => buttonHandler(movieInfo.id, movieInfo.movieData) }>
                   <OpenIcon />
                 </IconButton>
               }

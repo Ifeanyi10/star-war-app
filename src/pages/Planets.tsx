@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-
+import { ThemeProvider } from '@mui/material/styles';
 import { Grid, Paper, Toolbar } from '@mui/material';
+
 import DrawerLayout from '../components/layouts/DrawerLayout';
 import theme from '../components/models/Theme';
 import FooterBox from '../components/widgets/FooterBox';
@@ -65,7 +65,7 @@ const PlanetsPage: React.FC = () =>{
             <Toolbar />
             <Container maxWidth="lg" sx={{ mt: 2, mb: 4 }}>
               <Grid container spacing={10}>
-                {/* Chart */}
+                
                 <Grid item xs={12} md={6} lg={6}>
                   <Paper
                     sx={{
@@ -83,7 +83,7 @@ const PlanetsPage: React.FC = () =>{
                     <PlanetCardList planets={planets} />
                   </Paper>
                 </Grid>
-                {/* Recent Deposits */}
+                
                 <Grid item xs={12} md={6} lg={6}>
                   <Paper
                     sx={{
